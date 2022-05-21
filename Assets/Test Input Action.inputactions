@@ -1,0 +1,108 @@
+{
+    "name": "Test Input Action",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "cbd3c12d-c800-4b73-8b69-059f43de0825",
+            "actions": [
+                {
+                    "name": "VerticalMove",
+                    "type": "Value",
+                    "id": "3310e7fb-65ed-481b-92c1-2052b8ed8b19",
+                    "expectedControlType": "Axis",
+                    "processors": "Scale(factor=3)",
+                    "interactions": ""
+                },
+                {
+                    "name": "HorizontalMove",
+                    "type": "Value",
+                    "id": "6908f8af-4c36-413d-ad82-e756c5d8bb80",
+                    "expectedControlType": "Axis",
+                    "processors": "Scale(factor=3)",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Vertical Axis",
+                    "id": "e7a101f6-edf2-41bc-ad23-425229464ef9",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "VerticalMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "8e3357f5-374f-4e2c-a35f-e897195369cb",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "VerticalMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d9c5cd8c-bea8-445a-a615-578e9cd591f6",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "VerticalMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Horizontal Axis",
+                    "id": "19887eba-367f-4d55-b9e1-a7fd8bb92d95",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f28a678e-586a-4522-9810-1be1eb2b8b2b",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "967c6665-4fd5-4d8f-bf14-9cfa5e8a865b",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
